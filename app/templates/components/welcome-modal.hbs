@@ -1,0 +1,12 @@
+<div class="modal modal-lg {{if showModal "active"}}">
+    <a href="#close" class="modal-overlay" aria-label="Close"></a>
+    <div class="modal-container">
+        <div class="lading-page">
+            {{#each model as |index|}}
+                <h1>{{index.title}}</h1>
+                <h2>{{index.subtitle}}</h2>
+             {{/each}}
+            <button {{action "closeModal"}}>Volgende</button>
+        </div>
+    </div>
+</div>

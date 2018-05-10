@@ -1,1 +1,10 @@
-{{outlet}}
+{{hero-image image="http://via.placeholder.com/1000x300"}}
+
+{{#each model as |index|}}
+    {{markdown-to-html index.content}}
+{{/each}}
+
+{{painting-gallery}}
+
+{{welcome-modal
+    model=model}}

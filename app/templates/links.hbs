@@ -1,1 +1,13 @@
-{{outlet}}
+{{hero-image image="http://via.placeholder.com/1000x300"}}
+
+{{#each model as |links|}}
+    <div class="columns">
+        <div class="column col-12">{{links.title}}</div>
+    </div>
+
+    <div class="columns">
+        <div class="column col-12">
+            {{markdown-to-html links.content}}
+        </div>
+    </div>
+{{/each}}

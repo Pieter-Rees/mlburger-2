@@ -1,1 +1,19 @@
-{{outlet}}
+{{hero-image image="http://via.placeholder.com/1000x300"}}
+
+{{#each model as |psychotherapeut|}}
+<div class="columns">
+    <div class="column col-12">{{psychotherapeut.title}}</div>
+</div>
+<div class="columns">
+    <div class="column col-3">
+        <img src="http://via.placeholder.com/200x250" alt="">
+    </div>
+     <div class="column col-9">
+    {{markdown-to-html psychotherapeut.content1}}
+
+    </div>
+</div>
+
+
+    {{markdown-to-html psychotherapeut.content2}}
+{{/each}}
