@@ -1,10 +1,16 @@
-<header class="navbar">
-    <div class="container grid-lg">
+<header class="container grid-lg navbar">
     <section class="navbar-section">
         <a href="#" class="navbar-brand mr-2">Psychotherapiepraktijk M.L. Burger</a>
     </section>
+
     <section class="navbar-section">
-        <span class="menu-button"></span>
+        {{menu-modal
+    showMenu=showMenu}}
+        <div class="nav-icon{{if menuButton " open"}}" {{action "toggleMenu"}}>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </section>
-    </div>
 </header>
+
