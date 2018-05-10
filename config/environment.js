@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'ember-quickstart',
+    modulePrefix: 'static-app',
     environment,
     rootURL: '/',
     locationType: 'auto',
