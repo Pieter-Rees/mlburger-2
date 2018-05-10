@@ -1,8 +1,11 @@
 .footer-navigation__logo {
+  padding: 2em 0;
+
   h2 {
     font-family: Italianno;
     font-size: 3rem;
     text-align: center;
+    margin: 0;
 
     &:before, &:after {
       content: '';
@@ -13,5 +16,14 @@
       background-color: $base-color;
       margin: .8rem;
     }
+  }
+}
+.footer-navigation__links {
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+
+  .footer-navigation__links--link {
+    margin: 0 1em;
   }
 }

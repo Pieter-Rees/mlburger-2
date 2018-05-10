@@ -1,18 +1,20 @@
-{{#each model as |informatie|}}
-    <div class="columns">
-        <div class="column col-12">{{informatie.title}}</div>
-    </div>
+{{hero-image
+image="informatie"
+title="Kosten en Verzekering"}}
 
-    <div class="columns">
-        <div class="column col-12">
-            {{markdown-to-html informatie.content1}}
+<main class="container grid-lg">
+    {{#each model as |informatie|}}
+        <div class="columns">
+            <div class="column col-12">
+                {{markdown-to-html informatie.content1}}
 
+            </div>
         </div>
-    </div>
-     <div class="columns">
-        <div class="column col-12">
-            {{markdown-to-html informatie.content2}}
+        <div class="columns">
+            <div class="column col-12">
+                {{markdown-to-html informatie.content2}}
 
+            </div>
         </div>
-    </div>
-{{/each}}
+    {{/each}}
+</main>

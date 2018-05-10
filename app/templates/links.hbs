@@ -1,13 +1,13 @@
-{{hero-image image="http://via.placeholder.com/1000x300"}}
+{{hero-image
+    image="links"
+    title="Links"}}
 
-{{#each model as |links|}}
-    <div class="columns">
-        <div class="column col-12">{{links.title}}</div>
-    </div>
-
-    <div class="columns">
-        <div class="column col-12">
-            {{markdown-to-html links.content}}
+<main class="container grid-lg">
+    {{#each model as |links|}}
+        <div class="columns">
+            <div class="column col-12">
+                {{markdown-to-html links.content}}
+            </div>
         </div>
-    </div>
-{{/each}}
+    {{/each}}
+</main>

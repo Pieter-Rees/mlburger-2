@@ -8,7 +8,7 @@ export default Component.extend({
     toggleMenu() {
       this.toggleProperty('menuButton');
       this.toggleProperty('showMenu');
-
     }
+
   }
 });

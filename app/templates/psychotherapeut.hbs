@@ -1,19 +1,28 @@
-{{hero-image image="http://via.placeholder.com/1000x300"}}
+{{hero-image
+    image="psychotherapeut"
+    title="Marie Louise Burger"}}
 
-{{#each model as |psychotherapeut|}}
-<div class="columns">
-    <div class="column col-12">{{psychotherapeut.title}}</div>
-</div>
-<div class="columns">
-    <div class="column col-3">
-        <img src="http://via.placeholder.com/200x250" alt="">
+<main class="container grid-lg">
+    {{#each model as |psychotherapeut|}}
+    <div class="columns">
+        <div class="column col-xs-12 col-3">
+            <picture class="therapist">
+                <img class="therapist__image" sizes="(max-width: 1080px) 100vw, 1080px" srcset="
+                    ./images/ambiance/psychotherapeut/marielouiseburger-190.jpg 190w,
+                    ./images/ambiance/psychotherapeut/marielouiseburger-560.jpg 560w,
+                    ./images/ambiance/psychotherapeut/marielouiseburger-810.jpg 810w,
+                ./images/ambiance/psychotherapeut/marielouiseburger-1008.jpg 1008w,
+                ./images/ambiance/psychotherapeut/marielouiseburger-1080.jpg 1080w"
+                    src="./images/ambiance/psychotherapeut/marielouiseburger-190.jpg" alt="Marlie Louise Burger">
+            </picture>
+        </div>
+        <div class="column col-xs-12 col-9">
+        {{markdown-to-html psychotherapeut.content1}}
+
+        </div>
     </div>
-     <div class="column col-9">
-    {{markdown-to-html psychotherapeut.content1}}
-
-    </div>
-</div>
 
 
-    {{markdown-to-html psychotherapeut.content2}}
-{{/each}}
+        {{markdown-to-html psychotherapeut.content2}}
+    {{/each}}
+</main>

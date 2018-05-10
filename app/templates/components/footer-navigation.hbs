@@ -1,13 +1,22 @@
-<nav class="footer-navigation">
-    <div class="footer-navigation__logo">
-        <h2>MLB</h2>
+<nav class="container grid-lg footer-navigation">
+    <div class="columns">
+        <div class="column col-12">
+            <div class="footer-navigation__logo">
+                <h2>MLB</h2>
+            </div>
+        </div>
     </div>
-     <div class="footer-navigation__links">
-         {{#link-to "index"}}Welkom{{/link-to}}
-         {{#link-to "psychotherapeut"}}De Psychotherapeut{{/link-to}}
-         {{#link-to "praktijk"}}De praktijk{{/link-to}}
-         {{#link-to "informatie"}}Kosten en Verzekering{{/link-to}}
-         {{#link-to "contact"}}Contact{{/link-to}}
-         {{#link-to "links"}}Links{{/link-to}}
+
+    <div class="columns">
+        <div class="column col-12">
+            <div class="footer-navigation__links">
+                {{#link-to "index" class="footer-navigation__links--link"}}Welkom{{/link-to}}
+                {{#link-to "psychotherapeut" class="footer-navigation__links--link"}}De Psychotherapeut{{/link-to}}
+                {{#link-to "praktijk" class="footer-navigation__links--link"}}De praktijk{{/link-to}}
+                {{#link-to "informatie" class="footer-navigation__links--link"}}Kosten en Verzekering{{/link-to}}
+                {{#link-to "contact" class="footer-navigation__links--link"}}Contact{{/link-to}}
+                {{#link-to "links" class="footer-navigation__links--link"}}Links{{/link-to}}
+            </div>
+        </div>
     </div>
 </nav>

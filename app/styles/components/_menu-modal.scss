@@ -1,0 +1,14 @@
+.modal-container {
+  display: flex;
+  justify-content: center;
+
+  .modal-container__links {
+    display: flex;
+    flex-direction: column;
+
+    .modal-container__links--link {
+      margin: 2em auto;
+
+    }
+  }
+}
