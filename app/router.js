@@ -7,6 +7,11 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('psychotherapeut');
+  this.route('praktijk');
+  this.route('informatie');
+  this.route('contact');
+  this.route('links');
 });
 
 export default Router;
