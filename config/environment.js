@@ -21,12 +21,23 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
+
     contentful: {
       space: 'upmwne6oi8po',
       accessToken: '43eb780389f440bee9e0e677b8d4916820e9c378771c6eb95e73a3d2e9ce3b7c',
       previewAccessToken: 'f6e6679f4dcea0eaf5716d9dedaa342ba5ca08b17e0b78b572b8c314d223ae42',
       usePreviewApi: true
     },
+
+    googleFonts: [
+      'Italianno:400'
+    ],
+
+    // Set or update content security policies
+    contentSecurityPolicy: {
+      'font-src': "'self' fonts.gstatic.com",
+      'style-src': "'self' fonts.googleapis.com"
+    }
   };
 
   if (environment === 'development') {

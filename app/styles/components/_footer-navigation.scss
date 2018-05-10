@@ -1,0 +1,17 @@
+.footer-navigation__logo {
+  h2 {
+    font-family: Italianno;
+    font-size: 3rem;
+    text-align: center;
+
+    &:before, &:after {
+      content: '';
+      position: relative;
+      display: inline-block;
+      height: 1px;
+      width: 50px;
+      background-color: $base-color;
+      margin: .8rem;
+    }
+  }
+}
