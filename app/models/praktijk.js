@@ -7,4 +7,5 @@ export default Contentful.extend({
   content2: attr('string'),
   content3: attr('string'),
   content4: attr('string'),
+  content5: attr('string'),
 });
