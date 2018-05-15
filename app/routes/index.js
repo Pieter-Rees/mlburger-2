@@ -4,11 +4,9 @@ export default Route.extend({
   model() {
     return this.store.findAll('index');
   },
-  actions: {
-    didTransition() {
-      console.log('test');
 
-    }
+  actions: {
+    didTransition() {}
   }
 
 });
