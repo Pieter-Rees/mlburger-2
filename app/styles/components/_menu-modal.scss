@@ -1,6 +1,7 @@
 .modal-container {
   display: flex;
   justify-content: center;
+  animation: slide-up .52s ease 1;
 
   .modal-container__links {
     display: flex;

@@ -1,14 +1,13 @@
 import Component from '@ember/component';
+import { inject as service } from '@ember/service';
 
 export default Component.extend({
-  menuButton: false,
-  showMenu: false,
+  navigationMenu: service(),
 
   actions: {
     toggleMenu() {
-      this.toggleProperty('menuButton');
-      this.toggleProperty('showMenu');
-    }
-
+      this.toggleProperty('navigationMenu.menuButton');
+      this.toggleProperty('navigationMenu.showMenu');
+    },
   }
 });
