@@ -11,7 +11,6 @@ export default Component.extend({
 
   willRender() {
     let now = moment()._d;
-    let savedActualisation = moment(new Date(this.get('actualisation.date')));
 
     let diff = moment(new Date(this.get('actualisation.date'))).diff(now, 'days')
 
