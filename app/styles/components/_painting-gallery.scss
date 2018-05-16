@@ -1,0 +1,10 @@
+.painting-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  img {
+    height: 250px;
+    border: .5em solid grey;
+  }
+}
