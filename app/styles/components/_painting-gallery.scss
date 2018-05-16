@@ -5,6 +5,7 @@
 
   img {
     height: 250px;
-    border: .5em solid grey;
+    border: .5em solid white;
+    @include box-shadow(1);
   }
 }

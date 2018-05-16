@@ -1,15 +1,16 @@
 @import 'spectre';
 
 @import 'base/colors';
+@import 'base/mixins';
 @import 'base/grid';
 @import 'base/theme';
 
 @import 'components/main-navigation';
 @import 'components/menu-modal';
 @import 'components/painting-gallery';
-
 @import 'components/footer-navigation';
 @import 'components/hero-image';
+@import 'components/copyright';
 
 @import 'routes/psychotherapeut';
 @import 'routes/praktijk';

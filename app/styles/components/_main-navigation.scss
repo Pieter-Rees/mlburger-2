@@ -1,5 +1,5 @@
 .main-navigation {
-  //padding: 1em;
+  padding: 1em 0;
 }
 
 .nav-icon {
@@ -22,6 +22,7 @@
     left: 0;
     transform: rotate(0deg);
     transition: 0.25s ease-in-out;
+    background: $lavendar;
 
     &:nth-child(1) {
       top: 0px;
