@@ -4,7 +4,16 @@
     </div>
 
     <div class="painting">
-        <img src="{{image}}" alt="">
+        <img
+            sizes="(max-width: 526px) 100vw, 526px"
+            srcset="
+                images/paintings/{{imagename}}-200.jpg 200w,
+                images/paintings/{{imagename}}-347.jpg 347w,
+                images/paintings/{{imagename}}-449.jpg 449w,
+                images/paintings/{{imagename}}-526.jpg 526w"
+            src="images/paintings/{{imagename}}-526.jpg"
+            alt="">
+
     </div>
 
     <div class="link">

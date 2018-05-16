@@ -3,6 +3,7 @@ import { inject as service } from '@ember/service';
 
 export default Component.extend({
   navigationMenu: service(),
+  classNames: ['main-navigation'],
 
   actions: {
     toggleMenu() {
