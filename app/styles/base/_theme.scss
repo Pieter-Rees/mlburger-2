@@ -1,6 +1,7 @@
 body {
   background: $paper;
 }
+
 a {
   color: $lavendar;
 
@@ -11,6 +12,10 @@ a {
   &.active {
     color: darken($lavendar, 10%);
   }
+}
+
+.center {
+  text-align: center;
 }
 
 hr {
