@@ -1,5 +1,9 @@
 .main-navigation {
   padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  @include box-shadow(2);
 }
 
 .nav-icon {
@@ -10,7 +14,7 @@
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
   cursor: pointer;
-  z-index: 1000; // Needs a lot to be above spectre modal
+  z-index: 9999999; // Needs a lot to be above spectre modal
 
   span {
     display: block;

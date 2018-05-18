@@ -1,7 +1,12 @@
 .painting-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title, .link {
+    margin: 1em auto;
+  }
+
 
   img {
     height: 250px;
