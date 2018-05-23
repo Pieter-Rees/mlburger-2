@@ -1,4 +1,4 @@
-<nav class="container grid-lg footer-navigation">
+<nav class="container grid-lg">
     <div class="columns">
         <div class="column col-12">
             <div class="footer-navigation__logo">
@@ -8,15 +8,24 @@
     </div>
 
     <div class="columns">
-        <div class="column col-12">
-            <div class="footer-navigation__links">
-                {{#link-to "index" class="footer-navigation__links--link"}}Welkom{{/link-to}}
-                {{#link-to "psychotherapeut" class="footer-navigation__links--link"}}De Psychotherapeut{{/link-to}}
-                {{#link-to "praktijk" class="footer-navigation__links--link"}}De praktijk{{/link-to}}
-                {{#link-to "informatie" class="footer-navigation__links--link"}}Kosten en Verzekering{{/link-to}}
-                {{#link-to "contact" class="footer-navigation__links--link"}}Contact{{/link-to}}
-                {{#link-to "links" class="footer-navigation__links--link"}}Links{{/link-to}}
-            </div>
+        <div class="column col-xs-12 col-sm-2">
+            {{#link-to "index" class="footer-navigation__links--link"}}Welkom{{/link-to}}
+
+
+        </div>
+        <div class="column col-xs-12 col-sm-2">{{#link-to "psychotherapeut" class="footer-navigation__links--link"}}De Psychotherapeut{{/link-to}}</div>
+        <div class="column col-xs-12 col-sm-2">{{#link-to "praktijk" class="footer-navigation__links--link"}}De praktijk{{/link-to}}</div>
+        <div class="column col-xs-12 col-sm-2">
+
+            {{#link-to "informatie" class="footer-navigation__links--link"}}Kosten en Verzekering{{/link-to}}
+        </div>
+        <div class="column col-xs-12 col-sm-2">
+            {{#link-to "contact" class="footer-navigation__links--link"}}Contact{{/link-to}}
+
+        </div>
+        <div class="column col-xs-12 col-sm-2">
+            {{#link-to "links" class="footer-navigation__links--link"}}Links{{/link-to}}
+
         </div>
     </div>
 </nav>

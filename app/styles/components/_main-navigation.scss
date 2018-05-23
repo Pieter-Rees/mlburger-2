@@ -1,3 +1,10 @@
+.navbar {
+  .navbar-section {
+    &:first-child {
+      flex: 5;
+    }
+  }
+}
 .main-navigation {
   padding: 1em 0;
   position: fixed;

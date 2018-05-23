@@ -9,8 +9,12 @@
 
 
   img {
-    height: 250px;
+    height: 150px;
     border: .5em solid white;
     @include box-shadow(1);
+
+    @include media(medium) {
+      height: 250px;
+    }
   }
 }

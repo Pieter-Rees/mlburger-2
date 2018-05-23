@@ -1,3 +1,7 @@
+.footer-navigation {
+  padding: 1em 0;
+}
+
 .footer-navigation__logo {
   padding: 2em 0;
 
@@ -8,13 +12,17 @@
     margin: 0;
 
     &:before, &:after {
+      display: none;
       content: '';
       position: relative;
-      display: inline-block;
       height: 1px;
       width: 50px;
       background-color: $lavendar;
       margin: .8rem;
+
+      @include media(small) {
+        display: inline-block;
+      }
     }
   }
 }
