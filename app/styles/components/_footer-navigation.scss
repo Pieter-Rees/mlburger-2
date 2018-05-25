@@ -1,13 +1,12 @@
 .footer-navigation {
-  padding: 1em 0;
+  padding: 2em 0;
 }
 
 .footer-navigation__logo {
-  padding: 2em 0;
 
   h2 {
     font-family: Italianno;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     margin: 0;
 
@@ -16,22 +15,55 @@
       content: '';
       position: relative;
       height: 1px;
-      width: 50px;
+      width: 30px;
       background-color: $lavendar;
       margin: .8rem;
+      font-size: .1em;
+      top: 5px;
 
-      @include media(small) {
+      @include media(large) {
         display: inline-block;
       }
     }
   }
 }
-.footer-navigation__links {
+.footer-navigation__lvvp {
+  padding: 1em;
+
+  picture {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 8em;
+      height: 8em;
+    }
+  }
+}
+
+.devider {
+  position: relative;
   display: flex;
-  justify-content: center;
-  padding: 2em 0;
+  align-items: center;
+
+  &:after {
+    height: 60px;
+    width: 1px;
+    right: 0;
+    background-color: $lavendar;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    display: none;
+
+    @include media(medium) {
+      display: block;
+    }
+  }
+}
+.footer-navigation__links {
+  list-style: none;
 
   .footer-navigation__links--link {
-    margin: 0 1em;
   }
 }

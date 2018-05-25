@@ -1,31 +1,29 @@
 <nav class="container grid-lg">
     <div class="columns">
-        <div class="column col-12">
-            <div class="footer-navigation__logo">
-                <h2>MLB</h2>
-            </div>
+        <div class="column col-xs-12 col-sm-4 devider">
+            <ul class="footer-navigation__links">
+                <li>{{#link-to "index" class="footer-navigation__links--link"}}Welkom{{/link-to}}</li>
+                <li>{{#link-to "psychotherapeut" class="footer-navigation__links--link"}}De Psychotherapeut{{/link-to}}</li>
+                <li>{{#link-to "praktijk" class="footer-navigation__links--link"}}De praktijk{{/link-to}}</li>
+                <li>{{#link-to "informatie" class="footer-navigation__links--link"}}Kosten en Verzekering{{/link-to}}</li>
+                <li>{{#link-to "contact" class="footer-navigation__links--link"}}Contact{{/link-to}}</li>
+                <li>{{#link-to "links" class="footer-navigation__links--link"}}Links{{/link-to}}</li>
+            </ul>
         </div>
-    </div>
 
-    <div class="columns">
-        <div class="column col-xs-12 col-sm-2">
-            {{#link-to "index" class="footer-navigation__links--link"}}Welkom{{/link-to}}
-
-
-        </div>
-        <div class="column col-xs-12 col-sm-2">{{#link-to "psychotherapeut" class="footer-navigation__links--link"}}De Psychotherapeut{{/link-to}}</div>
-        <div class="column col-xs-12 col-sm-2">{{#link-to "praktijk" class="footer-navigation__links--link"}}De praktijk{{/link-to}}</div>
-        <div class="column col-xs-12 col-sm-2">
-
-            {{#link-to "informatie" class="footer-navigation__links--link"}}Kosten en Verzekering{{/link-to}}
-        </div>
-        <div class="column col-xs-12 col-sm-2">
-            {{#link-to "contact" class="footer-navigation__links--link"}}Contact{{/link-to}}
-
-        </div>
-        <div class="column col-xs-12 col-sm-2">
-            {{#link-to "links" class="footer-navigation__links--link"}}Links{{/link-to}}
-
-        </div>
+         <div class="column col-xs-12 col-sm-4 devider">
+             <ul class="footer-navigation__links">
+                Praktijkadres
+                <li>1ste Hogeweg 16d</li>
+                <li>3701 HK Zeist</li>
+                <li>Werkdagen: maandag, donderdag en
+vrijdag</li>
+             </ul>
+         </div>
+         <div class="column col-xs-12 col-sm-4">
+             {{mlb-logo}}
+             {{lvvp-logo
+                class="footer-navigation__lvvp"}}
+         </div>
     </div>
 </nav>
