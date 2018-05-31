@@ -1,5 +1,29 @@
 .footer-navigation {
   padding: 2em 0;
+  background-image: url('../images/ambiance/index/190.jpg');
+  background-size: cover;
+  position: relative;
+
+  .overlay {
+    background-color: #000;
+    opacity: .3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .footer-navigation__content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+
+    a {
+      color: #fff;
+    }
+  }
 }
 
 .footer-navigation__logo {
@@ -9,22 +33,6 @@
     font-size: 2rem;
     text-align: center;
     margin: 0;
-
-    &:before, &:after {
-      display: none;
-      content: '';
-      position: relative;
-      height: 1px;
-      width: 30px;
-      background-color: $lavendar;
-      margin: .8rem;
-      font-size: .1em;
-      top: 5px;
-
-      @include media(large) {
-        display: inline-block;
-      }
-    }
   }
 }
 .footer-navigation__lvvp {
@@ -45,22 +53,8 @@
   position: relative;
   display: flex;
   align-items: center;
-
-  &:after {
-    height: 60px;
-    width: 1px;
-    right: 0;
-    background-color: $lavendar;
-    content: '';
-    display: inline-block;
-    position: absolute;
-    display: none;
-
-    @include media(medium) {
-      display: block;
-    }
-  }
 }
+
 .footer-navigation__links {
   list-style: none;
 
