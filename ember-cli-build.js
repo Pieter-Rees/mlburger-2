@@ -4,12 +4,12 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    sassOptions: {
-      includePaths: [
-          'node_modules/spectre.css/dist/'
-      ]
-    }
+    fingerprint: {
+      enabled: false
+    },
   });
+
+  app.import('node_modules/spectre.css/dist/spectre.min.css');
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
