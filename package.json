@@ -1,6 +1,6 @@
 {
   "name": "static-app",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "description": "Small description for static-app goes here",
   "license": "MIT",
@@ -31,13 +31,13 @@
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-moment-shim": "^3.7.1",
     "ember-cli-qunit": "^4.1.1",
-    "ember-cli-sass": "^7.1.7",
+    "ember-cli-sass": "^7.2.0",
     "ember-cli-shims": "^1.2.0",
-    "ember-cli-showdown": "^4.3.0",
+    "ember-cli-showdown": "^4.4.4",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^2.0.0",
-    "ember-data": "~3.1.0",
-    "ember-data-contentful": "^0.2.3",
+    "ember-data": "~3.2.0",
+    "ember-data-contentful": "^0.2.4",
     "ember-export-application-global": "^2.0.0",
     "ember-link-action": "^0.1.0",
     "ember-load-initializers": "^1.0.0",
@@ -53,7 +53,7 @@
     "loader.js": "^4.2.3"
   },
   "engines": {
-    "node": "^4.5 || 6.* || >= 7.*"
+    "node": "^4.5 || 6.* || >= 7.* || >= 8.*"
   },
   "dependencies": {
     "spectre.css": "^0.5.1"
