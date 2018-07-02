@@ -1,0 +1,8 @@
+<div class="read-more-container {{if expanded 'expanded'}}">
+    {{markdown-to-html content}}
+</div>
+{{#if expanded}}
+    <p {{action 'toggle'}}>Lees minder</p>
+{{else}}
+    <p {{action 'toggle'}}>Lees meer</p>
+{{/if}}

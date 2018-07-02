@@ -3,3 +3,13 @@
     display: inline-block;
   }
 }
+
+.read-more-container {
+  height: 200px;
+  overflow: hidden;
+  transition: .9s all;
+
+  &.expanded {
+    height: auto;
+  }
+}
