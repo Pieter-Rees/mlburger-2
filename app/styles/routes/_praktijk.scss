@@ -3,3 +3,17 @@
     display: inline-block;
   }
 }
+
+.read-more-container {
+  max-height: 200px;
+	overflow: hidden;
+
+	/* Set our transitions up. */
+	-webkit-transition: max-height 1s;
+	-moz-transition: max-height 1s;
+	transition: max-height 1s;
+
+  &.expanded {
+    max-height: 10000px;
+  }
+}
