@@ -5,11 +5,15 @@
 }
 
 .read-more-container {
-  height: 200px;
-  overflow: hidden;
-  transition: .9s all;
+  max-height: 200px;
+	overflow: hidden;
+
+	/* Set our transitions up. */
+	-webkit-transition: max-height 1s;
+	-moz-transition: max-height 1s;
+	transition: max-height 1s;
 
   &.expanded {
-    height: auto;
+    max-height: 10000px;
   }
 }
