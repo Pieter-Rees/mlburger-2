@@ -11,7 +11,7 @@ module.exports = function(defaults) {
     autoprefixer: {
       browsers: ['last 10 versions', 'IE 11'],
       cascade: false,
-      sourcemap: true
+      sourcemap: true,
     },
   });
 
