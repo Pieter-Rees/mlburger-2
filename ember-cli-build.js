@@ -7,6 +7,12 @@ module.exports = function(defaults) {
     fingerprint: {
       enabled: false
     },
+
+    autoprefixer: {
+      browsers: ['last 10 versions', 'IE 11'],
+      cascade: false,
+      sourcemap: true
+    },
   });
 
   app.import('node_modules/spectre.css/dist/spectre.min.css');
