@@ -1,0 +1,16 @@
+.landing-page {
+  > h2, h3 {
+    margin: 2em auto;
+  }
+}
+
+.welcome-modal.active {
+  height: 100vh;
+  z-index: 100000000;
+  top: 0;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+}
