@@ -5,6 +5,4 @@ export default Route.extend(ScrollToTop, {
   model() {
     return this.store.findAll('index');
   },
-
-
 });

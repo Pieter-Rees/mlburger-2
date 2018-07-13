@@ -1,12 +1,8 @@
-<div class="modal modal-lg {{if showModal "active"}}">
-    <a href="#close" class="modal-overlay" aria-label="Close"></a>
-    <div class="modal-container">
-        <div class="lading-page">
-            {{#each model as |index|}}
-                <h1>{{index.title}}</h1>
-                <h2>{{index.subtitle}}</h2>
-             {{/each}}
-            <button {{action "closeModal"}}>Volgende</button>
-        </div>
+<a href="#close" class="modal-overlay" aria-label="Close"></a>
+<div class="modal-container">
+    <div class="landing-page">
+        <h2>Welkom op de website van Psychotherapiepraktijk M.L. Burger</h2>
+        <h3>Praktijk voor psychotherapie en supervisie</h3>
+        <button class="btn" {{action "closeModal"}}>Volgende</button>
     </div>
 </div>
