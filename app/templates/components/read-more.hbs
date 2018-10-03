@@ -2,7 +2,7 @@
     {{markdown-to-html content}}
 </div>
 {{#if expanded}}
-    <p {{action 'toggle'}}>Lees minder</p>
+    <a {{action 'toggle'}} class="read-more-less" role="button">Lees minder</a>
 {{else}}
-    <p {{action 'toggle'}}>Lees meer</p>
+    <a {{action 'toggle'}} class="read-more-less" role="button">Lees meer</a>
 {{/if}}
