@@ -47,7 +47,7 @@
     "ember-local-storage": "^1.4.1",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-moment": "^7.7.0",
-    "ember-qunit": "^4.2.0",
+    "ember-qunit": "^4.4.1",
     "ember-resolver": "^5.0.1",
     "ember-source": "~3.7.0",
     "ember-svg-jar": "^1.2.2",
