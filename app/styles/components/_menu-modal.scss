@@ -1,7 +1,18 @@
+.welcome-modal{
+  background-image: url(../images/ambiance/corpsdeballet.jpg) !important;
+  background-size: cover;
+}
+
+.modal-overlay {
+  background: transparent !important;
+
+}
+
 .modal-container {
   display: flex;
   justify-content: center;
   animation: slide-up .52s ease 1;
+  background: transparent !important;
 
   .modal-container__links {
     display: flex;
