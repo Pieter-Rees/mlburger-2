@@ -4,6 +4,12 @@
   }
 }
 
+.welcome-modal{
+  background-image: url(../images/ambiance/corpsdeballet.jpg) !important;
+  background-size: cover;
+  background: transparent !important;
+}
+
 .welcome-modal.active {
   height: 100vh;
   z-index: 100000000;
