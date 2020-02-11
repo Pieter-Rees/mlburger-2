@@ -19,3 +19,7 @@
 
 @import 'routes/psychotherapeut';
 @import 'routes/praktijk';
+
+.modal-overlay, .modal-container {
+  background: transparent !important;
+}
